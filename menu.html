@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MacROSO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="javey.js"></script>
+
+  <style>
+    body {
+      height: 100%;
+    }
+
+    html {
+      height: 100%;
+      font-family: "Inconsolata", sans-serif;
+    }
+
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url(restaurant-joann-enschede-interieur-1649340774.jpg);
+      min-height: 75%;
+    }
+
+    .menu {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Links (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+      <div class="w3-col s3">
+        <a href="home.html" class="w3-button w3-block w3-black">Home</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="menu.html" class="w3-button w3-block w3-black">Menu</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="reservatie.html" class="w3-button w3-block w3-black">Reservatie</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="contact.html" class="w3-button w3-block w3-black">Contact</a>
+      </div>
+
+      <div class="w3-col s3">
+        <a href="login.html" class="w3-button w3-block w3-black">Login</a>
+      </div>
+
+      <div class="w3-col s3">
+        <a href="login.html" class="w3-button w3-block w3-black"> <img src="taal select.png" style="width: 2em; ""> </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header with image -->
+  <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+      <span class="w3-tag">Open van 17:00 tot 23:00</span>
+    </div>
+    <div class="w3-display-middle w3-center">
+      <span class="w3-text-white" style="font-size:90px">MacROSO</span>
+    </div>
+    <div class="w3-display-bottomright w3-center w3-padding-large">
+      <span class="w3-text-white">Gevestigd in elke provinciehoofdstad van Nederland.</span>
+    </div>
+  </header>
+
+  <!-- Add a background color and large text to the whole page -->
+  <div class="w3-sand w3-grayscale w3-large">
+
+
+    <!-- Menu Container -->
+    <div class="w3-container" id="menu">
+      <div class="w3-content" style="max-width:700px">
+
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">HET MENU</span></h5>
+
+
+
+
+
+
+
+        <body>
+
+          <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')">Alles</button>
+            <button class="btn" onclick="filterSelection('groente')">Zonder groente</button>
+            <button class="btn" onclick="filterSelection('vlees')">Zonder vlees</button>
+            <button class="btn" onclick="filterSelection('fruit')">Zonder fruit</button>
+            
+
+            <br><br>
+
+            <button class="btn" onclick="filterSelection('zuivel')">Zonder zuivel</button>
+            <button class="btn" onclick="filterSelection('alcohol')">zonder alcohol</button>
+            <button class="btn" onclick="filterSelection('noten')">zonder noten</button>
+            
+            <p>Kcal<input class="after" type="number" placeholder="Max. per 100 gram/ml" required name="People"></p>
+              
+              <p>Zout<input class="after"
+                type="number" placeholder="Max. per 100 gram/ml" required name="People"></p>
+
+            <p>Vet
+              <input class="after" type="number" placeholder="Max. per 100 gram/ml" required name="People"></p>
+              
+              <p>Verz. vet <input class="after"
+                type="number" placeholder="Max. per 100 gram/ml" required name="People">
+            </p>
+
+            <p>Suikers <input class="after" type="number" placeholder="Max. per 100 gram/ml" required name="People"></p>
+
+            <p>Vezels <input
+                class="after" type="number" placeholder="Max. per 100 gram/ml" required name="People"></p>
+
+            <p>Koolhydraten <input
+                class="after" type="number" placeholder="Max. per 100 gram/ml" required name="People"></p>
+            
+            <p>Eiwit <input
+                class="after" type="number" placeholder="Max. per 100 gram/ml" required name="People"></p>
+
+          </div>
+
+
+
+
+          <br>
+
+
+
+
+
+
+
+
+
+          <div class="w3-row w3-center w3-card w3-padding">
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+              <div class="w3-col s6 tablink">Eten</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+              <div class="w3-col s6 tablink">Drinken</div>
+            </a>
+          </div>
+
+
+
+          <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+
+
+            <div class="container">
+
+              <div class="filterDiv vlees groente zuivel show">
+                <a><h5><strong >Gehaktbal met rucolastampot</strong></h5></a>
+                <p class="w3-text-grey">Geniet van een smaakvolle combinatie van hartige gehaktballen en verfrissende rucolastampot, een perfecte keuze voor een heerlijke en gezellige maaltijd!
+
+
+
+                  €10,-</p>
+                <br>
+              </div>
+
+              <div class="filterDiv vlees zuivel show">
+                <a href="biefstuk.html"><h5><strong>Kogelbiefstuk met roomkaas en romige aardappeltjes</strong></h5></a>
+                <p class="w3-text-grey">Ervaar de ultieme smaakbeleving met malse kogelbiefstuk en romige aardappeltjes, aangevuld met een verrukkelijke roomkaassaus voor een culinaire ervaring die je niet snel zal vergeten! €20.00</p><br>
+              </div>
+
+
+              <div class="filterDiv groente show">
+                <h5><strong>Vegetarische Koolcurry met rookworst</strong></h5>
+                <p class="w3-text-grey">Geniet van een heerlijk en gezond vegetarisch gerecht met een verrassende twist van een rookworst, met onze smaakvolle en kleurrijke Vegetarische Koolcurry! €17.00</p><br>
+              </div>
+
+
+              
+              <div class="filterDiv groente show">
+                <h5><strong>Italiaanse Kapucijnerschotel met focaccia</strong></h5>
+                <p class="w3-text-grey">Ervaar de smaak van Italië met onze Kapucijnerschotel met Focaccia, waarbij de romige en hartige smaak van de kapucijners perfect samengaat met de zachte en aromatische smaak van focaccia, voor een authentieke en smaakvolle Italiaanse ervaring!
+
+
+
+                  €21.00</p><br>
+              </div>
+
+
+              <div class="filterDiv groente zuivel alcohol show">
+                <h5><strong>Pittige Boerenkoolrisotto met salami</strong></h5>
+                <p class="w3-text-grey">Laat je smaakpapillen verrassen met onze Pittige Boerenkoolrisotto met Salami, waarbij de zachte en romige risotto perfect wordt opgepept door de pittige smaak van boerenkool en de hartige smaak van salami voor een heerlijk en stevig gerecht dat je niet wilt missen!
+
+
+
+                  €19.50</p><br>
+              </div>
+
+
+              <div class="filterDiv fruit show">
+                <h5><strong>Fruitschaal</strong></h5>
+                <p class="w3-text-grey">Verwen jezelf en je gasten met een kleurrijke fruitschaal vol met heerlijk seizoensfruit, perfect als een gezonde snack, dessert of als een prachtige en smaakvolle decoratie voor elke gelegenheid! €13,00</p><br>
+              </div>
+
+
+
+              <div class="filterDiv vlees alcohol groente show">
+                <h5><strong>Boeuf de dauble</strong></h5>
+                <p class="w3-text-grey">Trakteer je smaakpapillen op de rijke en verrukkelijke smaak van Boeuf de Daube, een traditioneel Frans gerecht met mals rundvlees gestoofd in rode wijn, groenten en kruiden - perfect voor een luxueuze en onvergetelijke maaltijd!        €26.50</p><br>
+              </div>
+
+
+
+              <div class="filterDiv vlees groente show">
+                <h5><strong>Rode kool met Spek</strong></h5>
+                <p class="w3-text-grey">Geniet van een heerlijk wintergerecht met onze Rode Kool met Spek, waarbij de zoete smaak van rode kool perfect wordt aangevuld met de hartige en knapperige smaak van spek - een smaaksensatie die je gegarandeerd warm zal houden op koude dagen! €18.00</p><br>
+              </div>
+
+
+
+              <div class="filterDiv vlees zuivel show">
+                <h5><strong>Kalfsoester met dragonjus</strong></h5>
+                <p class="w3-text-grey">Laat je smaakpapillen verwennen met onze malse Kalfsoester met Dragonjus, waarbij de delicate smaak van kalfsvlees wordt versterkt door de kruidige en aromatische dragonjus voor een culinaire ervaring die je niet snel zult vergeten! €26.50</p><br>
+              </div>
+
+
+
+              <div class="filterDiv vlees fruit show">
+                <h5><strong>Biefstuk met ananas</strong></h5>
+                <p class="w3-text-grey">Geniet van een tropische smaakervaring met onze heerlijke Biefstuk met Ananas, waarbij de sappige ananas perfect samengaat met mals rundvlees voor een zoete en hartige smaaksensatie!
+
+
+
+                  €22.50</p><br>
+              </div>
+
+
+              <div class="filterDiv vlees groente show">
+                <h5><strong>Peperkarbonades</strong></h5>
+                <p class="w3-text-grey">Laat je smaakpapillen dansen met onze smaakvolle en malse Peperkarbonades, perfect gekruid en gebakken voor een onweerstaanbare culinaire ervaring!
+                  €16.50</p><br>
+              </div>
+
+
+              <div class="filterDiv vlees fruit show">
+                <h5><strong>Karbonades met sinaasappels</strong></h5>
+                <p class="w3-text-grey">Laat je verrassen door de combinatie van hartige en zoete smaken met onze Karbonades met sinaasappels, een heerlijk gerecht waarbij malse karbonades worden aangevuld met sappige sinaasappels en kruidige specerijen voor een smaakvolle en gezonde maaltijd!                  €19.50</p><br>
+              </div>
+
+
+              <div class="filterDiv groente zuivel noten show">
+                <h5><strong>Spruitjes met oude kaas en Cashewnoten</strong></h5>
+                <p class="w3-text-grey">Geniet van een smaakvolle en gezonde twist op spruitjes met onze Spruitjes met oude kaas en Cashewnoten, een perfecte combinatie van knapperige spruitjes, romige kaas en nootachtige cashewnoten die je smaakpapillen zullen verrassen en verwennen! €19.50</p>
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+            <h5><strong>Bruisend water</strong></h5>
+            <p class="w3-text-grey">Bruisend water van een Turkse bron 2.50</p><br>
+
+            <h5><strong>Chocolade melk</strong></h5>
+            <p class="w3-text-grey">Chocolade melk van pure chocolade 4.50</p><br>
+
+            <h5><strong>Frisdrank</strong></h5>
+            <p class="w3-text-grey">Cola, Sprite, Fanta, etc. 2.50</p><br>
+
+            <h5><strong>Groene thee</strong></h5>
+            <p class="w3-text-grey">Hete groene thee 3.50</p><br>
+
+            <h5><strong>Ijsthee</strong></h5>
+            <p class="w3-text-grey">Lipton ice tea 2.50</p><br>
+
+            <h5><strong>Karnemelk</strong></h5>
+            <p class="w3-text-grey">Zure karnemelk van Deense koeien 2.50</p><br>
+
+            <h5><strong>Koffie</strong></h5>
+            <p class="w3-text-grey">Hete koffie (met melk) 3.50</p><br>
+
+            <h5><strong>Verse Melk</strong></h5>
+            <p class="w3-text-grey">Verse melk van Griekse koeien 2.50</p><br>
+
+            <h5><strong>Water</strong></h5>
+            <p class="w3-text-grey">Vers kraanwater 2.50</p>
+          </div>
+
+      </div>
+    </div>
+
+    <br>
+
+    <!-- End page content -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+    <p>Mogelijk gemaakt door Magnus Turba</p>
+  </footer>
+
+  <script>
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+    }
+    document.getElementById("myLink").click();
+  </script>
+
+</body>
+
+</html>

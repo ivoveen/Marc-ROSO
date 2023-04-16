@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MacROSO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      height: 100%;
+    }
+
+    html {
+      height: 100%;
+      font-family: "Inconsolata", sans-serif;
+    }
+
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url(restaurant-joann-enschede-interieur-1649340774.jpg);
+      min-height: 75%;
+    }
+
+    .menu {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Links (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+      <div class="w3-col s3">
+        <a href="home.html" class="w3-button w3-block w3-black">Home</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="menu.html" class="w3-button w3-block w3-black">Menu</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="reservatie.html" class="w3-button w3-block w3-black">Reservatie</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="contact.html" class="w3-button w3-block w3-black">Contact</a>
+      </div>
+
+      <div class="w3-col s3">
+        <a href="login.html" class="w3-button w3-block w3-black">Login</a>
+      </div>
+
+      <div class="w3-col s3">
+        <a href="biefstuk loggedin.html" class="w3-button w3-block w3-black"> <img src="taal select.png" style="width: 2em; ""> </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header with image -->
+  <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+      <span class="w3-tag">Open van 17:00 tot 23:00</span>
+    </div>
+    <div class="w3-display-middle w3-center">
+      <span class="w3-text-white" style="font-size:90px">MacROSO</span>
+    </div>
+    <div class="w3-display-bottomright w3-center w3-padding-large">
+      <span class="w3-text-white">Gevestigd in elke provinciehoofdstad van Nederland.</span>
+    </div>
+  </header>
+
+  <!-- Add a background color and large text to the whole page -->
+  <div class="w3-sand w3-grayscale w3-large">
+
+    <!-- About Container -->
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Kogelbiefstuk met roomkaas en romige aardappeltjes</span></h5> 
+        <div class="w3-center"><img class="w3-button" src="edit.png" style="width: 4em;"><img src="taal select.png" style="width: 2em; ""> <img class="w3-button" src="delete.png" style="width: 4em; ""></div>
+        
+        <p>Ervaar de ultieme smaakbeleving met malse kogelbiefstuk en romige aardappeltjes, aangevuld met een verrukkelijke roomkaassaus voor een culinaire ervaring die je niet snel zal vergeten!
+         Al onze biefstukken worden verkregen van één van onze boerderijen in West-Australië.</p>
+         <p><strong>Prijs:</strong> €20,00</p>
+        
+
+         <p><strong>Ingredienten:</strong></p>
+        <p>Biefstuk,
+          Aardappel,
+          Broccoli,
+          paturain knoflook met kruiden,
+          Olijfolie.</p>
+        <div class="w3-panel w3-leftbar w3-light-grey">
+
+        </div>
+
+        <img src="Cow-steak-e1538051986495.jpg" style="width:100%;max-width:1000px"
+          class="w3-margin-top">
+          <img src="Screenshot 2023-04-16 170802.png" style="width:100%;max-width:1000px"
+          class="w3-margin-top">
+      </div>
+    </div>
+
+<br>
+
+    <!-- End page content -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+    <p>Mogelijk gemaakt door Magnus Turba</p>
+  </footer>
+
+  <script>
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+    }
+    document.getElementById("myLink").click();
+  </script>
+
+</body>
+
+</html>

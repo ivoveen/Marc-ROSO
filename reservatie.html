@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MacROSO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+
+
+  <style>
+    body {
+      height: 100%;
+    }
+
+    html {
+      height: 100%;
+      font-family: "Inconsolata", sans-serif;
+    }
+
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url(restaurant-joann-enschede-interieur-1649340774.jpg);
+      min-height: 75%;
+    }
+
+    .menu {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  </head>
+
+  <body>
+
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-row w3-padding w3-black">
+        <div class="w3-col s3">
+          <a href="home.html" class="w3-button w3-block w3-black">Home</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="menu.html" class="w3-button w3-block w3-black">Menu</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="reservatie.html" class="w3-button w3-block w3-black">Reservatie</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="contact.html" class="w3-button w3-block w3-black">Contact</a>
+        </div>
+  
+        <div class="w3-col s3">
+          <a href="login.html" class="w3-button w3-block w3-black">Login</a>
+        </div>
+  
+        <div class="w3-col s3">
+          <a href="login.html" class="w3-button w3-block w3-black"> <img src="taal select.png" style="width: 2em; ""> </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+      <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+        <span class="w3-tag">Open van 17:00 tot 23:00</span>
+      </div>
+      <div class="w3-display-middle w3-center">
+        <span class="w3-text-white" style="font-size:90px">MacROSO</span>
+      </div>
+      <div class="w3-display-bottomright w3-center w3-padding-large">
+        <span class="w3-text-white">Gevestigd in elke provinciehoofdstad van Nederland.</span>
+      </div>
+    </header>
+
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-sand w3-grayscale w3-large">
+
+
+
+      <!-- Contact/Area Container -->
+      <div class="w3-container" id="where" style="padding-bottom:32px;">
+        <div class="w3-content" style="max-width:700px">
+          <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">RESERVATIE</span></h5>
+          <p>Vind ons in de hoofdstad van elke provincie in Nederland!</p>
+          <img src="Frisone-pazzo.jpg" class="w3-image" style="width:100%">
+          <p><span class="w3-tag">TER INFO!</span> Wij bieden full service catering voor elk evenement, groot of klein.
+            We begrijpen uw behoeften en we zullen het eten verzorgen om aan de hoogste criteria van allemaal te
+            voldoen, zowel qua uiterlijk als qua smaak.</p>
+          <p><strong>Reserveer</strong> een tafel en stuur er, indien nodig, een bericht bij.</p>
+          <form action="" target="">
+            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Voor- en Achternaam" required name="Name"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="E-mailadres" required
+                name="Name"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="tel" placeholder="Telefoonnummer" required
+                name="Telefoonnummer"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Aantal mensen" required
+                name="People"></p>
+
+            <p>
+              <select class="w3-input w3-padding-16 w3-border">
+                <option value="rigatoni">Kies locatie:</option>
+                <option value="locatie">Kronenburgpassage 46, 6831 EM Arnhem</option>
+                <option value="locatie">Groningerstraat 57, 9401 BJ Assen</option>
+                <option value="locatie">Hinthamerstraat 105, 5211 MH Den Bosch</option>
+                <option value="locatie">Spui 10, 2511 BS Den Haag</option>
+                <option value="locatie">Herestraat 87, 9711 LC Groningen</option>
+                <option value="locatie">Grote Houtstraat 70, 2011 SX Haarlem</option>
+                <option value="locatie">Nieuwestad 50, 8911 CK Leeuwarden</option>
+                <option value="locatie">Promesse 30, 8232 VX Lelystad</option>
+                <option value="locatie">Grote Staat 18, 6211 CX Maastricht</option>
+                <option value="locatie">Lange Delft 39, 4331 AJ Middelburg</option>
+                <option value="locatie">Steenweg 45, 3511 JK Utrecht</option>
+                <option value="locatie">Diezerstraat 23, 8011 RC Zwolle</option>
+
+              </select>
+            </p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time"
+                required name="date" value="2020-11-16T20:00"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="text"
+                placeholder="Bericht / Bijzondere eisen (optioneel)" required name="Message"></p>
+            <p><button class="w3-button w3-black" type="submit">STUUR BERICHT</button></p>
+          </form>
+        </div>
+      </div>
+
+      <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+      <p>Mogelijk gemaakt door Magnus Turba</p>
+    </footer>
+
+    <script>
+      // Tabbed Menu
+      function openMenu(evt, menuName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("menu");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+        }
+        document.getElementById(menuName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+      }
+      document.getElementById("myLink").click();
+    </script>
+
+  </body>
+
+</html>
